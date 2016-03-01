@@ -23,8 +23,8 @@ app.use('/api/orders',order_routes);
 
 //start server and database
 models.sequelize.sync().then(function(){
-	app.listen(8080,function(){
-		console.log('Listening on http://localhost:8080');
+	app.listen(80,function(){
+		console.log('Listening on http://localhost:80');
 		console.log('Stop Server With CTRL + C');
 	});
 })
